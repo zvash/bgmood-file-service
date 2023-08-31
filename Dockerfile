@@ -11,7 +11,7 @@ WORKDIR /app
 COPY --from=builder /app/main .
 COPY app.env .
 COPY start.sh .
-COPY files ./
+COPY files ./files
 
 CMD [ "/app/main" ]
 ENTRYPOINT [ "/app/start.sh" ]
